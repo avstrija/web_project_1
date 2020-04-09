@@ -16,9 +16,9 @@
     display: flex;
     flex-direction: column;
     background-color: #F2f2f2;
-    /* Sorry, I couldn't find other height specifications in the brief, there are just min and max height  */
     min-height: 600px; 
-    max-height: 756px;  
+    max-height: 756px; 
+    height: 100vh; 
 } 
  
 .header__title { 
@@ -241,13 +241,20 @@
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    background: #1f1f1f url('../images/triangle.svg');
-    background-position: top 10px right -210px;
-    background-size: 877px 877px;
-    background-repeat: no-repeat;
     color: #fff;
     padding: 90px 0; 
+    background-color:  #1f1f1f;
 } 
+
+.kaufman__triangle {
+    position: absolute;
+    top: 10px;
+    right: -210px;
+    height: 877px;
+    width: 877px;
+    background-image: url('../images/triangle.svg');
+    background-size: cover;
+}
 
 .footer { 
     background-color: #1f1f1f;
@@ -278,7 +285,6 @@
 } 
  
 .footer__column-heading { 
-    /* You said to change the line-height to 30px but the brief says 45px for the heading */
     line-height: 45px; 
     font-weight: bold; 
     margin: 0; 
