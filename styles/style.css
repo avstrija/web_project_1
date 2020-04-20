@@ -301,11 +301,10 @@
 } 
  
 .footer__links { 
-    display: flex;
-    flex-direction: column;
     padding: 20px 0 16px 0; 
     margin: 0;
     list-style: none;
+    
 } 
  
 .footer__link { 
@@ -316,3 +315,4 @@
 .footer__social-icon { 
     margin-right: 10px; 
 } 
+
