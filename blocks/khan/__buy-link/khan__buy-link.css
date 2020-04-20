@@ -4,4 +4,12 @@
     font-weight: normal;
     color: #2F80ED;
     text-decoration: none;
+    transition: opacity .66s ease;
+    /* added height so that the hover animation doesn't start when the user hovers
+    over the area under the link (it was 608px tall by default) */
+    height: 42px;
+} 
+
+.khan__buy-link:hover {
+    opacity: .66;
 }
